@@ -1,10 +1,22 @@
-import "./styles.css";
+/**
+ * アロー関数
+ */
+// function func1(str){
+//   return str;
+// }
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+
+// アロー関数
+const func2 = () => {
+  return str;
+};
+console.log(func2("func2です"));
+
+const func3 = (num1,num2) =>{
+  return num1 + num2;
+}
+console.log(func3(1,2))
